@@ -78,7 +78,14 @@
             border-radius: 4px;
         }
         .resume-btn:hover { background: rgba(100, 255, 218, 0.1); }
-
+        
+        .testimonial-btn {
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        .testimonial-btn:hover { background: rgba(100, 255, 218, 0.1); }
         /* --- LEFT SIDEBAR --- */
         .sidebar {
             position: fixed;
