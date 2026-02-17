@@ -26,13 +26,13 @@
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
             </svg>
         </a>
-        <!--<a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/charlisa-tan-86b3313b1/" target="_blank" aria-label="LinkedIn">
             <svg class="social-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                 <rect x="2" y="9" width="4" height="12"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
             </svg>
-        </a>-->
+        </a>
         <a href="mailto:charblahh1@gmail.com" aria-label="Email">
             <svg class="social-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -93,7 +93,7 @@
                         <a href="https://github.com/feliciatanxl/WDP-WS-AI-2025">↗</a>
                     </div>
                     <h3>Leaf Plant</h3>
-                    <p>A full-stack web application built with Python Flask to digitize business processes for SCCCI. Features include secure authentication, CRUD operations, and an AI-driven solution for industry productivity.</p>
+                    <p>Businesses under SCCCI were facing challenges in optimizing their sales and marketing efforts due to manual processes, fragmented data management, and lack of data-driven insights.There was a need for an AI-powered solution to improve decision-making, automate workflows, and enhance overall sales productivity.Thus, we built a full-stack web application with Python Flask to digitize business processes for SCCCI. Features include secure authentication, CRUD operations, and an AI-driven solution for industry productivity.</p>
                     <div class="card-tech">
                         <span>Flask</span>
                         <span>Jinja2</span>
@@ -107,7 +107,7 @@
                         <a href="https://github.com/charlisaa/ux-assignment-2">↗</a>
                     </div>
                     <h3>UX Design</h3>
-                    <p>Designed and developed a responsive website to market a School CCA Club. Focusing on User Experience (UX) principles, the site utilizes Bootstrap 5 for consistent layout across devices, accessible navigation, and interactive JavaScript elements to streamline the new member sign-up process.</p>
+                    <p>The school CCA club lacked a centralized and engaging digital platform to promote its activities and attract new members. Information was scattered or outdated, and the manual sign-up process was inconvenient, leading to reduced visibility and lower student engagement.Thus, I designed and developed a responsive website to market a School CCA Club. Focusing on User Experience (UX) principles, the site utilizes Bootstrap 5 for consistent layout across devices, accessible navigation, and interactive JavaScript elements to streamline the new member sign-up process.</p>
                     <div class="card-tech">
                         <span>JavaScript</span>
                         <span>CSS</span>
@@ -121,7 +121,7 @@
                         <a href="https://www.figma.com/proto/gLbDiwQ1UBHq7DW5cj2E5e/BIE-Prototype?node-id=3645-4574&p=f&t=zYio8802yPEUlxGF-0&scaling=scale-down&content-scaling=fixed&page-id=3133%3A1097&starting-point-node-id=3645%3A4556">↗</a>
                     </div>
                     <h3>Nirvana Mobile</h3>
-                    <p>Spearheaded a Customer Experience (CX) Transformation Plan for 'Nirvana Mobile' to address service gaps. Utilized Design Thinking methodologies—including empathy interviews, persona creation, and customer journey mapping—to identify pain points and prototype digital solutions for improved user retention.</p>
+                    <p>Nirvana Mobile was experiencing declining customer satisfaction and retention due to inconsistent service quality, slow response times, and fragmented support channels. Customers encountered frustration during onboarding, billing, and service recovery processes. The company lacked a structured, user-centered framework to deeply understand customer needs and improve end-to-end experiences.I utilized Design Thinking methodologies—including empathy interviews, persona creation, and customer journey mapping—to identify pain points and prototype digital solutions for improved user retention.</p>
                     <div class="card-tech">
                         <span>Design Thinking</span>
                         <span>User Research</span>
@@ -162,5 +162,31 @@
         </footer>
 
     </main>
+    <!-- Floating Music Button -->
+<div class="music-player">
+    <button id="music-btn" onclick="toggleMusic()">
+        🎧
+    </button>
+</div>
+
+<audio id="bg-music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    const music = document.getElementById("bg-music");
+    const btn = document.getElementById("music-btn");
+
+    function toggleMusic() {
+        if (music.paused) {
+            music.play();
+            btn.innerHTML = "⏸";
+        } else {
+            music.pause();
+            btn.innerHTML = "🎧";
+        }
+    }
+</script>
+
 </body>
 </html>
